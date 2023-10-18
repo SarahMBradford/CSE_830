@@ -254,7 +254,7 @@ if esp4==True:
 # In[33]:
 with tab3:
     st.header("Coffee")
-    coffee_image = Image.open("starbucks-coffee-cup-is-seen-inside-a-starbucks-coffee-shop-news-photo-947784930-1536936500.jpg")
+    coffee_image = Image.open("starbucks.jpg")
     coffee_image = coffee_image.resize((450, 400))
     st.image(coffee_image)
     coffee = sorted_starbucks[58:62]
