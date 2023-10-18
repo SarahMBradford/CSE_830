@@ -29,9 +29,9 @@ st.write(" Everyone loves a good “pick-me-up”, especially the one that has a
 # **Before diving into the project, we want to load the starbucks drink menu into a pandas dataframe and then use .head() to view the columns we are working with.**
 
 # In[22]:
-starbucks = pd.read_csv("/Users/sarahbradford/Downloads/starbucks_drinks.csv")
+starbucks = pd.read_csv("starbucks_drinks.csv")
 starbucks.head()
-starbucks_values = pd.read_csv("/Users/sarahbradford/Downloads/starbucks_drinks.csv")
+starbucks_values = pd.read_csv("starbucks_drinks.csv")
 # In[23]:
 
 # In[24]:
@@ -136,7 +136,7 @@ with tab1:
     st.write("Sodium & Saturated Fat 0.92")
     st.write("Sugars & Calories 0.91")
     st.write("Sugars & Total Carbs 0.77")
-    FDA_Recs = pd.read_csv("/Users/sarahbradford/Downloads/FDA_Recs.csv")
+    FDA_Recs = pd.read_csv("FDA_Recs.csv")
     st.write("Given the FDA Recommendations below, it is time to explore the highest correlated relationships in each Beverage Category. ")
     st.table(FDA_Recs)
 
