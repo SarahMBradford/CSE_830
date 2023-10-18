@@ -18,7 +18,7 @@ st.subheader("Sarah Bradford")
 
 st.title("Welcome to Starbucks, is the energy from your caffeinated beverages really worth it?")
 # # <div class="alert alert-success"> **Starbucks Drinks: Are they good for you?** ☕️</div>
-image = Image.open('/Users/sarahbradford/Downloads/starbucks_pic.jpg')
+image = Image.open('starbucks_pic.jpg')
 incoffee_image = image.resize((600, 400))
 st.image(incoffee_image)
 st.subheader("Introduction")
@@ -145,7 +145,7 @@ with tab1:
 # In[32]:
 with tab2:
     st.header("Espresso Drinks")
-    espresso_image = Image.open("/Users/sarahbradford/Downloads/starbucks-mocha-drinks-2-2.jpg")
+    espresso_image = Image.open("starbucks-mocha-drinks-2-2.jpg")
     espresso_image = espresso_image.resize((450, 400))
     st.image(espresso_image)
     st.write("Hover over the circles to uncover where your favorite caffienated drinks lie on the scatterplot. First, all beverages will appear colored by type, once a circle is selected it will uncover a drink's nutrient values.")
@@ -254,7 +254,7 @@ if esp4==True:
 # In[33]:
 with tab3:
     st.header("Coffee")
-    coffee_image = Image.open("/Users/sarahbradford/Downloads/starbucks-coffee-cup-is-seen-inside-a-starbucks-coffee-shop-news-photo-947784930-1536936500.jpg")
+    coffee_image = Image.open("starbucks-coffee-cup-is-seen-inside-a-starbucks-coffee-shop-news-photo-947784930-1536936500.jpg")
     coffee_image = coffee_image.resize((450, 400))
     st.image(coffee_image)
     coffee = sorted_starbucks[58:62]
@@ -357,7 +357,7 @@ if coffee4==True:
  
 with tab4:
     st.header("Coffee Frappuccinos")
-    coffeefrap_image = Image.open("/Users/sarahbradford/Downloads/GUEST_5befc930-6f2c-40d8-9d9e-513ad264cf0f.jpeg")
+    coffeefrap_image = Image.open("GUEST_5befc930-6f2c-40d8-9d9e-513ad264cf0f.jpeg")
     coffeefrap_image = coffee_image.resize((450, 400))
     st.image(coffeefrap_image)
     frappuccino_coffee = sorted_starbucks[62:98]
