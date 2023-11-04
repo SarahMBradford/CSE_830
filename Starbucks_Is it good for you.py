@@ -22,12 +22,12 @@ from PIL import Image
 st.subheader("Sarah Bradford")
 
 st.title("Welcome to Starbucks, what would you like to know?")
-# # <div class="alert alert-success"> **Starbucks Drinks: Are they good for you?** ☕️</div>
+# # <div class="alert alert-success"> **Starbucks Drinks: Is it good for you?** ☕️</div>
 image = Image.open('starbucks_pic.jpg')
 incoffee_image = image.resize((600, 400))
 st.image(incoffee_image)
 st.subheader("Introduction")
-st.write(" Everyone loves a good “pick-me-up”, especially the one that has a line full of people all hours throughout the day. Starbucks has been at the top of the coffeehouse connoisseur chain serving the most delicious drinks while delivering phenomenal customer service. Although, Starbucks is a favorite amongst many types of people, the discussion of its nutritional values has not been raised enough. The data science project: Starbucks: Are the drinks healthy for you?: intends to explore the nutriuental values on 241 of their most popular drink combinations containing caffeine. This is an important project, because we are living in a world that is fast paced and often relies on caffeine to get through the day everyday. According to the FDA, caffeine as well as all other nutrients should be consumed in moderation or there will be side effects. ")
+st.write(" Everyone loves a good “pick-me-up”, especially the one that has a line full of people all hours throughout the day. Starbucks has been at the top of the coffeehouse connoisseur chain serving the most delicious drinks while delivering phenomenal customer service. Although, Starbucks is a favorite amongst many types of people, the discussion of its nutritional values has not been raised enough. The data science project: Starbucks: Is it good for you?: intends to explore the nutriuental values on 241 of their most popular drink combinations containing caffeine. This is an important project, because we are living in a world that is fast paced and often relies on caffeine to get through the day everyday. According to the FDA, caffeine as well as all other nutrients should be consumed in moderation or there will be side effects. ")
 
 # # <div class="alert alert-success"> EDA </div>
 
