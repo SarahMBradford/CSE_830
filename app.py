@@ -21,7 +21,7 @@ from PIL import Image
 # Website Build
 st.subheader("Sarah Bradford")
 
-st.title("Welcome to Starbucks, what would you like to know?")
+st.title("Welcome to Starbucks, What's in Your Caffeinated Drink?")
 # # <div class="alert alert-success"> **Starbucks Drinks: Is it good for you?** ☕️</div>
 image = Image.open('starbucks_pic.jpg')
 incoffee_image = image.resize((600, 400))
