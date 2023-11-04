@@ -28,7 +28,7 @@ incoffee_image = image.resize((600, 400))
 st.image(incoffee_image)
 st.subheader("Introduction")
 st.write(" Everyone loves a good “pick-me-up”, especially the one that has a line full of people all hours throughout the day. Starbucks has been at the top of the coffeehouse connoisseur chain serving the most delicious drinks while delivering phenomenal customer service. Although, Starbucks is a favorite amongst many types of people, the discussion of its nutritional values has not been raised enough. The data science project: Starbucks: Is it good for you?: intends to explore the nutriuental values on 241 of their most popular drink combinations containing caffeine. This is an important project, because we are living in a world that is fast paced and often relies on caffeine to get through the day everyday. According to the FDA, caffeine as well as all other nutrients should be consumed in moderation or there will be side effects. ")
-
+st.write("By the end of this project, you will be able to build your own caffeinated drink and see the complete breakdown of nutrients and compare them to the FDA's recommendations.")
 # # <div class="alert alert-success"> EDA </div>
 
 # **Before diving into the project, we want to load the starbucks drink menu into a pandas dataframe and then use .head() to view the columns we are working with.**
