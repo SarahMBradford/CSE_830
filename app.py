@@ -865,7 +865,7 @@ if sig4==True:
 ###
 with tab9:
     st.header("Smoothies")
-    smoothie_image = Image.open("/Users/sarahbradford/Downloads/Does-Starbucks-Have-Smoothies-2.png")
+    smoothie_image = Image.open("Does-Starbucks-Have-Smoothies-2.png")
     smoothie_image = smoothie_image.resize((450, 400))
     st.image(smoothie_image)
     st.write("Hover over the circles to uncover where your favorite caffienated drinks lie on the scatterplot. First, all beverages will appear colored by type, once a circle is selected it will uncover a drink's nutrient values.")
