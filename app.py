@@ -149,6 +149,7 @@ with tab1:
         violin1 = sns.violinplot(data=starbucks, x="Cholesterol (mg)", y="Calories", hue="Beverage_category", palette="Greens")
         plt.title("Violinplot of Cholesterol (mg) & Calories Based on Beverage Category")
         st.pyplot(violin1.figure)
+        st.write("Coffee alone does not present a high amount of cholesterol or calories, but when you add the other ingredients to make the various categories of drinks the cholesterol and calories increase. For example both of the frappuccino categories and the both espresso categories show a trend of growth with the higher the cholestoral the higher amount of calories present in a drink.")
      
        
     sod = sod_col2.checkbox('Sodium (mg) & Saturated Fat (g)')
@@ -165,6 +166,7 @@ with tab1:
         violin2 = sns.violinplot(data=starbucks, x="Sodium (mg)", y="Saturated Fat (g)", hue="Beverage_category", palette="Greens")
         plt.title("Violinplot of Sodium (mg) & Saturated Fat (g) Based on Beverage Category")
         st.pyplot(violin2.figure)
+        st.write("Sodium (mg) and Saturated Fat (g) are not present in as many drinks as any of the other variables. However, the drinks that do contain these nutrients are smoothies, shaken iced beverages, teas, and very few of the frappucinos and espresso drinks. This can be explained by the sweetners that Starbucks uses to make these drinks taste good. The more sweetners added to a drink the higher the sodium and saturated fat content.")
     
       
     cal_col3 = cal_col3.checkbox('Calories & Sugars (g)')
@@ -181,6 +183,7 @@ with tab1:
         violin3 = sns.violinplot(data=starbucks, x="Calories", y="Sugars (g)", hue="Beverage_category", palette="Greens")
         plt.title("Violinplot of Calories & Sugars (g) Based on Beverage Category")
         st.pyplot(violin3.figure)
+        st.write("These plots provide a clear picture of the relationship between calories and sugars related to the sodium and saturated fats. Notice how the majority of coffee and espresso drinks do not have more than 40g of sugar, but the frappuccinos and smoothies have a higher amount of sugar. This is because the frappuccinos and smoothies are made with more sweetners than the coffee and espresso drinks. The more sweetners added to a drink the higher the calories and sugar content. However, it is important to note that the coffee and espresso drinks have a higher amount of calories than the frappuccinos and smoothies. This is because the coffee and espresso drinks are made with more milk than the frappuccinos and smoothies. The more milk added to a drink the higher the calories and sugar content.")
     
       
     trans_col4 = trans_col4.checkbox("Sodium (mg) and Trans Fat (g)")
@@ -197,9 +200,10 @@ with tab1:
         violin4 = sns.violinplot(data=starbucks, x="Sodium (mg)", y="Trans Fat (g) ",hue="Beverage_category")
         plt.title("Violinplot of Sodium (mg) & Trans fat (g) Based on Beverage Category")
         st.pyplot(violin4.figure)
-        
+        st.write("Similar to the sodium (mg) and saturated fat (g), the sodium (mg) and trans fat(g) plots do not show coffee itself, because there are not as many additives in those drinks. However, because all of the other drinks can be custom built based on a customer's preference. Lightly blended frappuccinos display a larger variance, because those drinks have endless possibilites of how ways to make them.")
 
-with tab1: 
+with tab1:
+    st.write("Below you will find a four tables of beverages containing the highest caffeine content, calorie count, cholesterol, and sodium." 
     st.subheader("Top 10 Beverages with the Highest Caffeine Content")
     filtered_starbucks = starbucks[(~starbucks['Caffeine (mg)'].str.lower().str.contains('varies')) & (starbucks['Caffeine (mg)'].str.isnumeric())]
     filtered_starbucks['Caffeine (mg)'] = pd.to_numeric(filtered_starbucks['Caffeine (mg)'])
@@ -218,9 +222,7 @@ with tab1:
     top_sod = starbucks.groupby(['Beverage_category', 'Beverage', 'Beverage_prep'])['Sodium (mg)'].max().sort_values(ascending=False).head(10)
     st.write(top_sod)
     
-    st.subheader("Summary of EDA")
-    st.write("After completing exploratory data analysis, it is safe to conclude coffee by itself is not as harmful when considering caffeine content as any of Starbucks' other beverages. The added ingredients that transform coffee into the various categories cause a spike in all nutritional values.")
-
+    st.write("After completing exploratory data analysis, it is safe to conclude coffee by itself is not as harmful when considering caffeine content as any of Starbucks' other beverages. The added ingredients that transform coffee into the various categories cause a spike in all nutritional values. Which is why it is important to consume these drinks in moderation. The next step in this project is to explore the highest correlated relationships in each beverage category.")
 # In[32]:
 with tab2:
     st.header("Espresso Drinks")
