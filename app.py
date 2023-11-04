@@ -203,7 +203,7 @@ with tab1:
         st.write("Similar to the sodium (mg) and saturated fat (g), the sodium (mg) and trans fat(g) plots do not show coffee itself, because there are not as many additives in those drinks. However, because all of the other drinks can be custom built based on a customer's preference. Lightly blended frappuccinos display a larger variance, because those drinks have endless possibilites of how ways to make them.")
 
 with tab1:
-    st.write("Below you will find a four tables of beverages containing the highest caffeine content, calorie count, cholesterol, and sodium." 
+    st.write("Below you will find four tables of beverages containing the highest caffeine content, calorie count, cholesterol, and sodium.")
     st.subheader("Top 10 Beverages with the Highest Caffeine Content")
     filtered_starbucks = starbucks[(~starbucks['Caffeine (mg)'].str.lower().str.contains('varies')) & (starbucks['Caffeine (mg)'].str.isnumeric())]
     filtered_starbucks['Caffeine (mg)'] = pd.to_numeric(filtered_starbucks['Caffeine (mg)'])
