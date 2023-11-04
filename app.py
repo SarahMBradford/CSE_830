@@ -1060,6 +1060,7 @@ with tab11:
 with tab11:    
     st.title("Your Turn to Build Your Drink's Nutritional Label")
     # User can use sidebar for selecting a beverage and preparation
+    st.sidebar.markdown("Tools to Build Your Drink")
     selected_beverage = st.sidebar.selectbox("Select a beverage", starbucks['Beverage'].unique())
     selected_prep = st.sidebar.selectbox("Select prep", starbucks['Beverage_prep'].unique())
 
